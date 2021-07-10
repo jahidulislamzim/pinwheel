@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    margin: 0;
+    padding:0px;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    background-color: #ecf0f3;
+    align-items: center;
+    justify-content: center;
+}
+h1
+{
+
+    align-content: center;
+    text-align: center;
+    position:relative;
+    color:#333;  
+}
+.row
+{
+    position: relative;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.col
+{
+    height:500px;
+    border-radius:25px;
+    margin:0 40px;
+    position:relative; 
+    box-shadow: 13px 13px 25px #cbced1,
+    -13px -13px 25px #fff;
+}
+
+.col img
+{
+   
+    width:300px;
+    margin-top: 20px;
+}
+
+.pinwheel
+{
+    position:relative;
+    z-index: 1000;
+    transition: transform 10s;
+    cursor:pointer;
+}
+.stick
+{
+    position:absolute;
+    top:100px;
+    left:50px;
+    transform: translate(-50px);
+}
+
+
+.about
+{
+    margin-top:120px;
+}
+
+.pinwheel:hover
+{
+    transform: rotate(2700deg);
+}
+
+
+.pinwheelani
+{
+    position:relative;
+    z-index: 1000;
+    animation: pinwheel 4s linear infinite;
+}
+
+
+@keyframes pinwheel
+{
+    from
+    {
+        transform: rotate(0deg)
+    }
+
+    to 
+    {
+        transform: rotate(2700deg);
+    }
+}
+
+
+.creator
+{
+    position:absolute;
+    margin-top: 630px;
+    color:#333;
+}
